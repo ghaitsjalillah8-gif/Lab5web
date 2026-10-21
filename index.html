@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum 5 - JavaScript Dasar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #222;
+    }
+    section {
+      background: white;
+      padding: 18px;
+      margin: 18px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #00000012;
+    }
+    button {
+      margin: 5px 5px 5px 0;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    input[type="number"], input[type="text"] {
+      padding: 7px;
+      margin: 5px 0;
+    }
+    .hasil {
+      font-weight: bold;
+      color: #174ea6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praktikum 5: JavaScript Dasar dan Manipulasi HTML</h1>
+  <p id="pesan">Konten awal.</p>
+
+  <section>
+    <h2>Latihan 1 — Menampilkan Output</h2>
+    <button type="button" onclick="latihan1()">Jalankan Latihan 1</button>
+    <p id="hasil1" class="hasil">Hasil akan tampil di sini.</p>
+  </section>
+
+  <section>
+    <h2>Latihan 2 — Alert dan Prompt</h2>
+    <button type="button" onclick="latihan2()">Jalankan Latihan 2</button>
+  </section>
+
+  <section>
+    <h2>Latihan 3 — Function dan Operasi Aritmetika</h2>
+    <p>Contoh menggunakan angka 9 dan 4. Hasil juga ditampilkan di Console (F12).</p>
+    <button type="button" onclick="latihan3()">Jalankan Latihan 3</button>
+    <pre id="hasil3" class="hasil"></pre>
+  </section>
+
+  <section>
+    <h2>Latihan 4 — Seleksi Kondisi if-else</h2>
+    <label for="nilai">Masukkan nilai (0–100):</label><br>
+    <input type="number" id="nilai" min="0" max="100">
+    <button type="button" onclick="latihan4()">Periksa Nilai</button>
+    <p id="hasil4" class="hasil"></p>
+  </section>
+
+  <section>
+    <h2>Latihan 5 — Seleksi Kondisi switch</h2>
+    <label for="pilihan">Masukkan angka 1–5:</label><br>
+    <input type="number" id="pilihan" min="1" max="5" step="1">
+    <button type="button" onclick="latihan5()">Tampilkan Nama Bilangan</button>
+    <p id="hasil5" class="hasil"></p>
+  </section>
+
+  <section>
+    <h2>Latihan 6 — Bilangan Genap atau Ganjil</h2>
+    <label for="bilangan">Masukkan bilangan bulat:</label><br>
+    <input type="number" id="bilangan" step="1">
+    <button type="button" onclick="cekBilangan()">Periksa</button>
+    <p id="hasilBilangan" class="hasil"></p>
+  </section>
+
+  <section>
+    <h2>Latihan 7 — Mengubah Warna Halaman</h2>
+    <button type="button" onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button>
+    <button type="button" onclick="ubahWarnaLatar('white')">Latar Putih</button>
+    <button type="button" onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
+  </section>
+
+  <section>
+    <h2>Latihan 8 — Checkbox Menu Makanan</h2>
+    <label><input type="checkbox" class="menu" value="5000"> Ayam Goreng — Rp5.000</label><br>
+    <label><input type="checkbox" class="menu" value="500"> Tempe — Rp500</label><br>
+    <label><input type="checkbox" class="menu" value="2500"> Telur Dadar — Rp2.500</label><br>
+    <p>Total: <span id="total" class="hasil">0</span></p>
+  </section>
+
+  <section>
+    <h2>Mini Project — Kalkulator Nilai Mahasiswa</h2>
+    <label for="tugas">Nilai Tugas (0–100):</label><br>
+    <input type="number" id="tugas" min="0" max="100"><br>
+    <label for="uts">Nilai UTS (0–100):</label><br>
+    <input type="number" id="uts" min="0" max="100"><br>
+    <label for="uas">Nilai UAS (0–100):</label><br>
+    <input type="number" id="uas" min="0" max="100"><br>
+    <button type="button" onclick="hitungKalkulator()">Hitung Nilai Akhir</button>
+    <p id="hasilKalkulator" class="hasil"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
