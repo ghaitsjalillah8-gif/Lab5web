@@ -9,7 +9,7 @@ Memahami JavaScript dasar, output, variabel, operator, function, percabangan, ma
 
 ## Cara Menjalankan
 1. Ekstrak folder/ZIP.
-2. Buka folder `lab5_javascript` di Visual Studio Code.
+2. Buka folder `lab5Web` di Visual Studio Code.
 3. Buka `index.html` di browser (klik dua kali file atau gunakan ekstensi Live Server).
 4. Tekan tombol pada setiap bagian latihan.
 5. Untuk melihat Console, tekan `F12` lalu pilih tab Console.
